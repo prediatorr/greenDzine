@@ -4,7 +4,7 @@ function App() {
   const [data, setData] = useState(null);
   const [search, setSearch] = useState("");
   function searching(e) {
-    setSearch(e.target.value);
+    setSearch(e.target.value.toLowerCase());
   }
   useEffect(() => {
     fetch("https://reqres.in/api/users?page=2")
