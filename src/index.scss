@@ -1,0 +1,42 @@
+.list{
+   display: grid ;
+   place-items: center;
+   grid-template-columns: auto;
+   gap:1.2rem;
+     
+}
+
+.item{
+    position: relative;
+    .box{
+        border: 1px solid rgba(0, 0, 0, 0.8);
+        text-align: center;
+        padding: 1rem;
+        border-radius:2rem ;
+    }
+    img{
+        width: 200px;
+        height: 150px;
+        object-fit: cover;
+        border-radius: 2rem;
+    }
+    .item-name{
+        text-align: center;
+        margin-top: 0.5rem;
+    }
+    .item-id{
+        position: absolute;
+        border: 1px solid;
+        right: 0rem;
+        top: 0;
+        width: 25px;
+        height: 25px;
+        border-radius: 1rem;
+        transform: translateY(-25%);
+        background-color: black;
+        color: white;
+        display: grid;
+        place-items: center;
+    }
+    
+}
